@@ -6,7 +6,7 @@ export const Header = () => {
         <header>
 
             <Link to="/"><img src={logo} alt="logo" height={24} /></Link>
-                
+            
             {/* <span className="logo"> Logo </span> */}
 
             <ul className="menu">
