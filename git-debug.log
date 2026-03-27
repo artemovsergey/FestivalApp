@@ -1,0 +1,42 @@
+11:07:07.338263 exec-cmd.c:237          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+11:07:07.340264 git.c:458               trace: built-in: git push gogs master -f
+11:07:07.342262 run-command.c:654       trace: run_command: GIT_DIR=.git git remote-http gogs http://192.168.4.90/asv/FestivalApp.git
+11:07:07.350264 exec-cmd.c:237          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+11:07:07.353263 git.c:746               trace: exec: git-remote-http gogs http://192.168.4.90/asv/FestivalApp.git
+11:07:07.353263 run-command.c:654       trace: run_command: git-remote-http gogs http://192.168.4.90/asv/FestivalApp.git
+11:07:07.365122 exec-cmd.c:237          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+11:07:07.371374 http.c:689              == Info: Couldn't find host 192.168.4.90 in the (nil) file; using defaults
+11:07:07.375374 http.c:689              == Info:   Trying 192.168.100.5:3128...
+11:07:07.376373 http.c:689              == Info: Connected to gate-espd.scc (192.168.100.5) port 3128 (#0)
+11:07:07.376373 http.c:636              => Send header, 0000000248 bytes (0x000000f8)
+11:07:07.376373 http.c:648              => Send header: GET http://192.168.4.90/asv/FestivalApp.git/info/refs?service=git-receive-pack HTTP/1.1
+11:07:07.376373 http.c:648              => Send header: Host: 192.168.4.90
+11:07:07.376373 http.c:648              => Send header: User-Agent: git/2.35.1.windows.2
+11:07:07.376373 http.c:648              => Send header: Accept: */*
+11:07:07.376373 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+11:07:07.376373 http.c:648              => Send header: Proxy-Connection: Keep-Alive
+11:07:07.376373 http.c:648              => Send header: Pragma: no-cache
+11:07:07.376373 http.c:648              => Send header:
+11:07:07.380488 http.c:689              == Info: Mark bundle as not supporting multiuse
+11:07:07.380488 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+11:07:07.380488 http.c:648              <= Recv header: HTTP/1.1 403 Forbidden
+11:07:07.380488 http.c:636              <= Recv header, 0000000040 bytes (0x00000028)
+11:07:07.380488 http.c:648              <= Recv header: Content-Type: text/html; charset=utf-8
+11:07:07.380488 http.c:636              <= Recv header, 0000000023 bytes (0x00000017)
+11:07:07.380488 http.c:648              <= Recv header: Content-Length: 34975
+11:07:07.380488 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+11:07:07.380488 http.c:648              <= Recv header: Date: Fri, 27 Mar 2026 08:06:39 GMT
+11:07:07.380488 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+11:07:07.380488 http.c:648              <= Recv header: X-Cache: MISS from espd-deb
+11:07:07.380488 http.c:636              <= Recv header, 0000000041 bytes (0x00000029)
+11:07:07.380488 http.c:648              <= Recv header: X-Cache-Lookup: MISS from espd-deb:3128
+11:07:07.380488 http.c:636              <= Recv header, 0000000031 bytes (0x0000001f)
+11:07:07.380488 http.c:648              <= Recv header: Via: 1.1 espd-deb (squid/5.7)
+11:07:07.380488 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+11:07:07.380488 http.c:648              <= Recv header: Connection: keep-alive
+11:07:07.380488 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+11:07:07.380488 http.c:648              <= Recv header:
+11:07:07.384489 http.c:689              == Info: Connection #0 to host gate-espd.scc left intact
+fatal: unable to access 'http://192.168.4.90/asv/FestivalApp.git/': The requested URL returned error: 403
+11:07:07.394607 trace.c:487             performance: 0.041896600 s: git command: git remote-http gogs http://192.168.4.90/asv/FestivalApp.git
+11:07:07.395608 trace.c:487             performance: 0.056616700 s: git command: 'C:\Program Files\Git\mingw64\bin\git.exe' push gogs master -f
