@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="grid grid-cols-2 justify-items-center p-3 gap-0 mx-auto bg-amber-200 w-full">
+    <footer className="grid grid-cols-2 text-[10px] justify-items-center p-3 gap-0 mx-auto bg-amber-200 w-full">
       <div className="flex flex-col gap-1">
         <NavLink to="/users" className="p-1">
           {" "}
