@@ -59,20 +59,26 @@ export const Sign = () => {
   useEffect(() => { fetchRegions() }, [])
 
   return (
-    <form onSubmit={(e) => { handleForm(e) }} className="flex flex-col gap-3 m-1 p-5 border rounded-2xl w-max">
-      <input type="text" required value={name} onChange={(e) => setName(e.target.value)} placeholder="ФИО" />
+    <form onSubmit={(e) => { handleForm(e) }} className="flex flex-col gap-3 m-1 p-5 w-max">
 
-      <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Почта" />
+      <h1 className="text-xl text-center font-bold"> Регистрация</h1>
 
-      <input type="text" required value={login} onChange={(e) => setLogin(e.target.value)} placeholder="Логин" />
-      <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Пароль" />
+      <input type="text" className="border rounded p-2" required value={name} onChange={(e) => setName(e.target.value)} placeholder="ФИО" />
 
-      <input type="text" required value={education} onChange={(e) => setEducation(e.target.value)} placeholder="Образование" />
-      <input type="text" required value={institut} onChange={(e) => setInstitut(e.target.value)} placeholder="Учебное заведение" />
+      <input type="email" className="border rounded p-2" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Почта" />
+
+      <input type="text" className="border rounded p-2" required value={login} onChange={(e) => setLogin(e.target.value)} placeholder="Логин" />
+      <input type="password" autoComplete="off" className="border rounded p-2" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Пароль" />
+
+      <input type="text" className="border rounded p-2" required value={education} onChange={(e) => setEducation(e.target.value)} placeholder="Образование" />
+      <input type="text" className="border rounded p-2" required value={institut} onChange={(e) => setInstitut(e.target.value)} placeholder="Учебное заведение" />
 
       {/* <input type="" required value={region} onChange={(e) => setRegion(e.target.value) } placeholder="Регион" /> */}
 
-      <select value={regionId} required onChange={(e) => setRegionId(Number(e.target.value))}>
+      <input type="file" className="border rounded p-2" required value={photo} onChange={(e) => setPhoto(e.target.value)} placeholder="Фото" />
+
+      <label className="font-medium"> Выберите регион: </label>
+      <select value={regionId} className="border rounded p-2" required onChange={(e) => setRegionId(Number(e.target.value))}>
         {/* <option disabled selected>Выберите регион</option> */}
         {
           regions.map((r) => <option key={r.id} value={r.id}> {r.name}</option>)
@@ -80,9 +86,8 @@ export const Sign = () => {
       </select>
 
 
-      <input type="file" required value={photo} onChange={(e) => setPhoto(e.target.value)} placeholder="Фото" />
 
-      <button type="submit" className="bg-amber-300"> Участвовать </button>
+      <button type="submit" className="bg-amber-300 p-2"> Участвовать </button>
     </form>
   );
 };

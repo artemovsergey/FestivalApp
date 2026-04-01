@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("festival-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1556d948a8df4d30a7a278f44b58f57fe943683")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6559a8f0a3d98a5d180db6df09543b8873d7b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("festival-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("festival-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

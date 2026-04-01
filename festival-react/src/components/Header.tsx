@@ -15,6 +15,7 @@ export const Header = () => {
         <NavLink to="/competences" className="hover:text-white p-2"> Компетенции </NavLink>
         <NavLink to="/admin" className="hover:text-white p-2"> Админ Панель </NavLink>
         <NavLink to="/sign" className="hover:text-white p-2"> Регистрация </NavLink>
+        <NavLink to="/auth" className="hover:text-white p-2"> Авторизация </NavLink>
       </div>
     </header>
   );
